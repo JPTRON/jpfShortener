@@ -71,7 +71,7 @@ function encurtar()
                user: conta};
   }
   
-  fetch("https://lacy-boulder-clutch.glitch.me/addLink", {
+  fetch("YourServerAddress/addLink", {
     method: "POST",
     body: JSON.stringify(data),
     headers: { "Content-Type": "application/json" }
