@@ -4,7 +4,7 @@ function login()
 {
   var data = { login: document.getElementById("user").value,
                password: document.getElementById("pass").value };
-  fetch("https://lacy-boulder-clutch.glitch.me/login", {
+  fetch("YourServerAddress/login", {
     method: "POST",
     body: JSON.stringify(data),
     headers: { "Content-Type": "application/json" }
