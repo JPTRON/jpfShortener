@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jpfShortener</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <script src="verificarLogin.js"></script>
+    <script src="menu.js" defer></script>
+</head>
+<body>
+    <center>
+
+        <div id="alerta" class="alerta">
+
+        </div>
+
+        <h3><b>jpfShortener - Encurta os seus URLs</b></h4><br><br>
+
+        <form id="dados" action="../dados/dados.html">
+            <input class="btn" type="submit" id="dadosbtn" value="Dados">
+            <br>
+            <br>
+            <br>
+        </form>
+
+        URL: <br> <input type="text" name="url" id="url"><br>
+        <div id="aliasdiv">
+            Alias: <br> <input type="text" name="alias" id="alias">
+        </div>
+        <br>
+        <button class="btn" id="encurtar">Encurtar</button>
+        <div id="shortUrldiv">
+            <br>
+            <br>
+            <br>
+            <input type="text" name="link" id="link" readonly>
+            <button class="btn" id="copiar">📋</button>
+        </div>
+        <br>
+        <br>
+        <form action="../login/login.html">
+            <br><input class="btn" type="submit" id="login" value="Login">
+        </form>
+
+        <button class="btn" id="sair">Sair</button>
+
+        <form id="registar" action="../registar/registar.html">
+            <br>
+            <input class="btn" type="submit" id="registar" value="Registar">
+        </form>
+        
+        <form id="alterar" action="../alterar/alterar.html">
+            <br> <input class="btn" type="submit" value="Alterar Password">
+        </form>
+    </center>     
+</body>
+</html>
