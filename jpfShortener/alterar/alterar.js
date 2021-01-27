@@ -11,7 +11,7 @@ function alterar() {
       var data = { login: conta,
                    pass: document.getElementById("pass").value,
                    newPass: document.getElementById("npass").value };
-      fetch("https://lacy-boulder-clutch.glitch.me/changePass", {
+      fetch("YourServerAddress/changePass", {
         method: "POST",
         body: JSON.stringify(data),
         headers: { "Content-Type": "application/json" }
