@@ -13,7 +13,7 @@ function registar() {
       }
       var data = { user: document.getElementById("user").value,
                password: document.getElementById("pass").value };
-      fetch("https://lacy-boulder-clutch.glitch.me/register", {
+      fetch("YourServerAddress/register", {
         method: "POST",
         body: JSON.stringify(data),
         headers: { "Content-Type": "application/json" }
