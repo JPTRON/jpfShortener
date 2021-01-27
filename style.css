@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:900');
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: bold;
+}
+
+body
+{
+    background-color: #BCECE0; 
+    min-width: 300px;
+}
+
+.btn
+{
+    background-color: transparent;
+    color: #4C5270;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid #4C5270;
+    font-size: 12px;
+}
+
+.btn:hover
+{
+    color: white;
+    background-color: #4C5270;
+}
+
+.alerta
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 10vh;
+    background-color: #eb3d3d;
+    color: white;
+    line-height: 0;
+    overflow: hidden; 
+    animation: slideDown 1.5s 1 ease forwards;
+    box-shadow: 0 0 5px black;
+}
+
+@keyframes slideDown
+{
+    0%, 100%
+    {
+        transform: translateY(-50px);
+    }
+
+    10%, 90%
+    {
+        transform: translateY(0px);
+    }
+}
+
