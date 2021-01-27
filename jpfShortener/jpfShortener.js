@@ -1,7 +1,7 @@
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab)
 {
     var data = { url: tab.url};
-      fetch("https://lacy-boulder-clutch.glitch.me/redirect", {
+      fetch("YourServerAddress/redirect", {
         method: "POST",
         body: JSON.stringify(data),
         headers: { "Content-Type": "application/json" }
