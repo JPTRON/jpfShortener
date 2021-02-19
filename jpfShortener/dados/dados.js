@@ -94,7 +94,7 @@ async function eliminar()
   for (var i = 0; i < checkboxes.length; i++) {
     var links = checkboxes[i].id;
     var data = {link: links};
-    await fetch("https://lacy-boulder-clutch.glitch.me/deleteLinks", {
+    await fetch("YourServerAddress/deleteLinks", {
       method: "POST",
       body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" }
